@@ -63,7 +63,26 @@ menu = [
         desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, tempora?"
     }
 ]
-
+chef = [
+    {
+        id : 1,
+        img : "./images/chefs-01.jpg",
+        name : "Randat Walker",
+        desc : "pastry Chef"
+    },
+    {
+        id : 2,
+        img : "./images/chefs-02.jpg",
+        name : "David Martin",
+        desc : "Cookie Chef"
+    },
+    {
+        id : 3,
+        img : "./images/chefs-03.jpg",
+        name : "Peter Perkson",
+        desc : "pancake chef"
+    }
+]
 // ===========Nav Toggler ==========
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
@@ -89,6 +108,9 @@ window.addEventListener("scroll", ()=> {
         navbar.classList.remove("fixed-nav")
     }
 });
+
+// =========== Menu ==========
+
 // parent container
 const menuItems = document.querySelector(".menu-items");
 window.addEventListener("DOMContentLoaded", function(){
@@ -108,3 +130,26 @@ window.addEventListener("DOMContentLoaded", function(){
     console.log(displayMenu)
     menuItems.innerHTML = displayMenu;
 });
+
+// =========== Chefs ==========
+const chefsContainer = document.querySelector(".chefs");
+window.addEventListener("DOMContentLoaded", function() {
+    let displayChefs = chef.map(function(e){
+        return`<div class="chef">
+        <div class="chef-img">
+            <img src=${e.img} alt=${e.name}>
+            <div class="social-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+            </div>
+        </div>
+        <div class="info">
+            <h4>${e.name}</h4>
+            <p>${e.desc}</p>
+        </div>
+    </div>`
+    });
+    displayChefs = displayChefs.join("");
+    chefsContainer.innerHTML = displayChefs;
+})
