@@ -12,3 +12,14 @@ navToggle.addEventListener("click", ()=> {
         linksContainer.style.height = 0;
     }
 })
+
+// ===========Nav Toggler ==========
+const navbar = document.getElementById("nav");
+window.addEventListener("scroll", ()=> {
+    const scrollHeight = window.pageYOffset;
+    if(scrollHeight > 400) {
+        navbar.classList.add("fixed-nav")
+    }else{
+        navbar.classList.remove("fixed-nav")
+    }
+});
