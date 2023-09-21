@@ -239,3 +239,54 @@ p {
         flex-direction: row;
     }
 }
+/*========== || MENU || ========== */
+.section-bg {
+    background-color: #f8f8f8;
+}
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+.menu-item {
+    min-width: 24%;
+    position: relative;
+    background-color: rgb(0, 255, 26);
+    overflow: hidden;
+}
+h5 {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+.price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FB5849;
+    padding: 1.3rem;
+}
+.item-info {
+    position: absolute;
+    background-color: #FB5849;
+    z-index: 9;
+    bottom: -230px;
+    padding: 1rem;
+}
+h4 {
+    color: #FFF;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 1000;
+}
+.item-info p {
+    color: #FFF;
+}
+.item-link {
+    color: #FFF;
+}
+.menu-item:hover .item-info {
+    bottom: 0;
+}
