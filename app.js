@@ -121,11 +121,94 @@ meal = [
     },
     {
         title : "Fresh Chicken Salad",
-        img : "./images/tab-item-01.png",
+        img : "./images/tab-item-06.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
         catagory : "Breakfast"
-    }
+    },
+    {
+        title : "Fruit Salad",
+        img : "./images/tab-item-03.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 9.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Dollma Pire",
+        img : "./images/tab-item-05.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 5.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Eggs Omelette",
+        img : "./images/tab-item-04.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 6.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-01.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Orange Juice",
+        img : "./images/tab-item-02.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 8.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-06.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "lunch"
+    },
+    {
+        title : "Eggs Omelette",
+        img : "./images/tab-item-04.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 6.50,
+        catagory : "Dinner"
+    },{
+        title : "Dollma Pire",
+        img : "./images/tab-item-05.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 5.50,
+        catagory : "Dinner"
+    },
+    {
+        title : "Fruit Salad",
+        img : "./images/tab-item-03.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 9.50,
+        catagory : "Dinner"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-06.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "Dinner"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-06.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "Dinner"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-06.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "Dinner"
+    },
 ]
 // ===========Nav Toggler ==========
 const navToggle = document.querySelector(".nav-toggle");
@@ -171,7 +254,6 @@ window.addEventListener("DOMContentLoaded", function(){
     </div>`
     });
     displayMenu = displayMenu.join('');
-    console.log(displayMenu)
     menuItems.innerHTML = displayMenu;
 });
 
@@ -197,3 +279,21 @@ window.addEventListener("DOMContentLoaded", function() {
     displayChefs = displayChefs.join("");
     chefsContainer.innerHTML = displayChefs;
 })
+// =========== Meals ==========
+const mealContainer = document.querySelector(".meal-container");
+
+window.addEventListener("DOMContentLoaded", function(){
+    let displayMeal = meal.map(function(m){
+        // console.log(m)
+        return `<div class="meal">
+        <img src=${m.img} alt=${m.title}>
+        <div class="meal-info">
+            <h5 class="dark-text">${m.title}</h5>
+            <p>${m.desc}</p>
+        </div>
+        <span class="meal-price">$${m.price}</span>
+    </div>`
+    });
+    displayMeal = displayMeal.join("");
+    mealContainer.innerHTML = displayMeal;
+});
