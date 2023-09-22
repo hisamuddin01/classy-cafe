@@ -83,6 +83,50 @@ chef = [
         desc : "pancake chef"
     }
 ]
+meal = [
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-01.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "Breakfast"
+    },
+    {
+        title : "Orange Juice",
+        img : "./images/tab-item-02.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 8.50,
+        catagory : "Breakfast"
+    },
+    {
+        title : "Fruit Salad",
+        img : "./images/tab-item-03.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 9.50,
+        catagory : "Breakfast"
+    },
+    {
+        title : "Eggs Omelette",
+        img : "./images/tab-item-04.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 6.50,
+        catagory : "Breakfast"
+    },
+    {
+        title : "Dollma Pire",
+        img : "./images/tab-item-05.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 5.50,
+        catagory : "Breakfast"
+    },
+    {
+        title : "Fresh Chicken Salad",
+        img : "./images/tab-item-01.png",
+        desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
+        price : 10.50,
+        catagory : "Breakfast"
+    }
+]
 // ===========Nav Toggler ==========
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");

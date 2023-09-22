@@ -447,5 +447,47 @@ textarea {
     width: 100%;
     color: #FFF;
     background-color: #FB5849;
-    border: none    ;
+    border: none ;
+}
+/*========== || MEAL || ========== */
+.btn-container {
+    margin-bottom: 3rem;
+}
+.meal-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+/*  */
+.meal {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(245, 244, 244);
+    padding: 1rem;
+}
+.meal img {
+    width: 100px;
+}
+.meal p {
+    margin-bottom: 0;
+}
+.meal-price {
+    display: inline-block;
+    background-color: #FB5849;
+    padding: 1.5rem .8rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .meal-container {
+        grid-template-columns: 1fr;
+    }
 }
