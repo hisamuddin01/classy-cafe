@@ -23,6 +23,124 @@ ul {
 a {
     text-decoration: none;
 }
+h1 {
+    padding-top: 35vh;
+    color: #FFF;
+    font-size: 3.5rem;
+    font-family: 'La Belle Aurore', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+h2 {
+    font-size: 30px;
+    color: #2a2a2a;
+    font-weight: 1000;
+    text-transform: capitalize;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+h3 {
+    color: #FFF;
+    font-size: 1rem;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+h4 {
+    color: #FFF;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 1000;
+}
+h5 {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    letter-spacing: 2px;
+}
+h6 {
+    color: #FB5849;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+p {
+    color: #2a2a2a;
+    font-size: 0.9rem;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+/*========== || GLOBAL STYLE || ========== */
+.section-padding {
+    padding: 5rem 0;
+}
+.section-bg {
+    background-color: #f8f8f8;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.section-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.bar {
+    position: relative;
+    padding-left: 55px;
+}
+.bar::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #FB5849;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.btn {
+    color: #FB5849;
+    font-size: .7rem;
+    background: #FFF;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: .8rem 1.2rem;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.social-icon{
+    color: #2a2a2a;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-white {
+    color: #FFF;
+}
+.dark-text {
+    color: #2a2a2a;
+}
+.section-center > div {
+    flex: 6;
+}
+@media screen and (max-width:768px) {
+    .section-center {
+        flex-direction: column;
+    }
+}
 /*========== || HEADER || ========== */
 /* || Navbar || */
 #nav {
@@ -129,33 +247,7 @@ a {
     height: 100%;
     background-color: #FB5849;
 }
-h1 {
-    padding-top: 35vh;
-    color: #FFF;
-    font-size: 3.5rem;
-    font-family: 'La Belle Aurore', cursive;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-h3 {
-    color: #FFF;
-    font-size: 1rem;
-    letter-spacing: 3.5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
-.btn {
-    color: #FB5849;
-    font-size: .7rem;
-    background: #FFF;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    font-weight: 800;
-    padding: .8rem 1.2rem;
-    border-radius: 3px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+
 .hero-showcase {
     flex: 8;
     height: inherit;
@@ -178,71 +270,16 @@ h3 {
     }
 }
 /*========== || ABOUT || ========== */
-.section-padding {
-    padding: 5rem 0;
-}
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-.section-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.col-6 {
-    flex: 6;
-}
-h6 {
-    color: #FB5849;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 1.2px;
-}
-.bar {
-    position: relative;
-    padding-left: 55px;
-}
-.bar::before {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    background-color: #FB5849;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-h2 {
-    font-size: 30px;
-    color: #2a2a2a;
-    font-weight: 1000;
-    text-transform: capitalize;
-    line-height: 40px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-p {
-    color: #2a2a2a;
-    font-size: 0.9rem;
-    line-height: 25px;
-    margin-bottom: 25px;
-}
+
+
 @media screen and (max-width:768px) {
-    .section-center {
-        flex-direction: column;
-    }
+    
     .about-text-img {
         flex-direction: row;
     }
 }
 /*========== || MENU || ========== */
-.section-bg {
-    background-color: #f8f8f8;
-}
+
 .menu-items {
     display: flex;
     align-items: center;
@@ -255,12 +292,7 @@ p {
     background-color: rgb(0, 255, 26);
     overflow: hidden;
 }
-h5 {
-    color: #FFF;
-    font-size: 1.5rem;
-    font-weight: 1000;
-    letter-spacing: 2px;
-}
+
 .price {
     position: absolute;
     top: 0;
@@ -275,12 +307,7 @@ h5 {
     bottom: -230px;
     padding: 1rem;
 }
-h4 {
-    color: #FFF;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    font-weight: 1000;
-}
+
 .item-info p {
     color: #FFF;
 }
@@ -343,4 +370,82 @@ h4 {
     font-weight: 300;
     text-transform: capitalize;
     margin-bottom: 1.5rem;
+}
+/*========== || CONTACT || ========== */
+#contact {
+    background: url(../images/reservation-bg.jpg);
+}
+.contact-cards {
+    padding-top: 2rem;
+}
+.contact-card {
+    background-color: #FFF;
+    padding: 2rem 1rem 1.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.contact-card i {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #FB5849;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: #FFF;
+}
+.contact-card span {
+    display: block;
+    margin: 0.5rem 0;
+}
+span a {
+    color: #272424;
+}
+.contact-card h4 {
+    color: #2a2a2a;
+}
+
+/* form */
+
+.form {
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.col-6 {
+    flex: 6;
+}
+input,select,textarea {
+    width: 100%;
+    height: 46px;
+    color: #2a2a2a;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 3px 20px;
+    margin-bottom: 15px;
+}
+textarea {
+    height: 100%;
+}
+.form-btn {
+    display: inline-block;
+    width: 100%;
+    color: #FFF;
+    background-color: #FB5849;
+    border: none    ;
 }
