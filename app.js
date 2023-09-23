@@ -89,42 +89,42 @@ meal = [
         img : "./images/tab-item-01.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Orange Juice",
         img : "./images/tab-item-02.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 8.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Fruit Salad",
         img : "./images/tab-item-03.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 9.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Eggs Omelette",
         img : "./images/tab-item-04.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 6.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Dollma Pire",
         img : "./images/tab-item-05.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 5.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Fresh Chicken Salad",
         img : "./images/tab-item-06.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
-        catagory : "Breakfast"
+        catagory : "breakfast"
     },
     {
         title : "Fruit Salad",
@@ -179,35 +179,35 @@ meal = [
         img : "./images/tab-item-05.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 5.50,
-        catagory : "Dinner"
+        catagory : "dinner`"
     },
     {
         title : "Fruit Salad",
         img : "./images/tab-item-03.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 9.50,
-        catagory : "Dinner"
+        catagory : "dinner`"
     },
     {
         title : "Fresh Chicken Salad",
         img : "./images/tab-item-06.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
-        catagory : "Dinner"
+        catagory : "dinner`"
     },
     {
         title : "Fresh Chicken Salad",
         img : "./images/tab-item-06.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
-        catagory : "Dinner"
+        catagory : "dinner`"
     },
     {
         title : "Fresh Chicken Salad",
         img : "./images/tab-item-06.png",
         desc : "Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.",
         price : 10.50,
-        catagory : "Dinner"
+        catagory : "dinner`"
     },
 ]
 // ===========Nav Toggler ==========
